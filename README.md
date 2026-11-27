@@ -1,22 +1,26 @@
-# Launch Readiness Board: React 19 Agile Sprint Board with Offline Sync
+<div align="center">
 
-> A Jira-style **Kanban and Scrum sprint board** built with **React 19, Vite 7 and TanStack Query 5**.
-> It has drag-and-drop issues, swimlanes, WIP limits, optimistic updates with rollback, and an
-> **offline-first sync queue**. Use it as an open-source project-management UI and as a reference for
-> modern React architecture.
+# Launch Readiness Board
 
-![React 19](https://img.shields.io/badge/React-19.2-61dafb?logo=react&logoColor=white)
-![Vite 7](https://img.shields.io/badge/Vite-7.3-646cff?logo=vite&logoColor=white)
-![TanStack Query 5](https://img.shields.io/badge/TanStack%20Query-5.90-ff4154?logo=reactquery&logoColor=white)
-![React Router 7](https://img.shields.io/badge/React%20Router-7.13-ca4245?logo=reactrouter&logoColor=white)
-![Vitest](https://img.shields.io/badge/tested%20with-Vitest-6e9f18?logo=vitest&logoColor=white)
-![Tests](https://img.shields.io/badge/tests-45%20passing-brightgreen)
+### Jira-style agile sprint board with offline-first sync and optimistic updates
 
-![Launch Readiness Board: React Kanban sprint board in dark mode with To Do, In Progress, In Review and Done columns](docs/screenshots/board-dark.png)
+![React](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack_Query-5-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-45_passing-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
+
+<p>A Jira-style <b>Kanban and Scrum sprint board</b> built with <b>React 19, Vite 7 and TanStack Query 5</b>. It has drag-and-drop issues, swimlanes, WIP limits, optimistic updates with rollback, and an <b>offline-first sync queue</b>. Use it as an open-source project-management UI and as a reference for modern React architecture.</p>
+
+[**Features**](#features) &nbsp;•&nbsp; [**Quick Start**](#quick-start) &nbsp;•&nbsp; [**Architecture**](#architecture-how-a-change-flows) &nbsp;•&nbsp; [**Tech Stack**](#libraries-and-tech-stack) &nbsp;•&nbsp; [**Structure**](#project-structure) &nbsp;•&nbsp; [**Testing**](#testing)
+
+<img src="docs/screenshots/board-dark.png" alt="Launch Readiness Board in dark mode" width="92%" />
+
+</div>
 
 ---
 
-## Table of contents
+<details>
+<summary><b>Table of contents</b></summary>
 
 - [Introduction](#introduction)
 - [Screenshots](#screenshots)
@@ -31,7 +35,7 @@
 - [FAQ](#faq)
 - [Keywords](#keywords)
 
----
+</details>
 
 ## Introduction
 
@@ -216,6 +220,9 @@ toasts, the design system) is written from scratch.
 
 ## Project structure
 
+<details>
+<summary><b>Show the full project structure</b></summary>
+
 The code is **feature-sliced**: each feature owns its components, hooks, selectors and services.
 Shared building blocks live in `shared/`.
 
@@ -263,6 +270,8 @@ launch-readiness-board/
 | `offlineQueue.js` | Saves the queue to `localStorage`. `flushQueue` stops at the first failure so the order is kept. |
 | `Overlay.jsx` | Accessible modal and drawer: `role="dialog"`, focus moves in, Escape and backdrop close it, and focus returns afterwards. |
 | `tasks.server.js` | Mock backend with a field whitelist, validation, no-op detection and human-readable activity entries. |
+
+</details>
 
 ---
 
@@ -346,3 +355,15 @@ React 19 Kanban board · Jira-style sprint board · agile project management app
 TanStack Query optimistic updates · React Query offline sync · offline-first React app · drag and drop
 Kanban · swimlanes · WIP limits · issue tracker React · Vite 7 React template · Vitest Testing Library
 example · feature-sliced architecture · accessible drag and drop · dark mode React app
+
+---
+
+<div align="center">
+
+**Built by [Mian Basam Ahmad](https://github.com/Mian-Basam)** · Software Engineer & Tech Lead
+
+[![Blog](https://img.shields.io/badge/Blog-mian--basam.github.io-222222?style=flat-square&logo=githubpages&logoColor=white)](https://mian-basam.github.io) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mian-basam-ahmad-68b997147/) [![GitHub](https://img.shields.io/badge/GitHub-Mian--Basam-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Mian-Basam)
+
+<sub>If this project helped you, consider giving it a ⭐</sub>
+
+</div>
